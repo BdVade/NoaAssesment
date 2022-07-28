@@ -11,9 +11,9 @@ def test_exists():
 
 
 def test_runnable():
-    """Runs using python3"""
+    """Runs correctly"""
 
     out = getoutput(f'python {prg} uncompressed_test compressed_test')
     with open("compressed_test", 'r') as file:
         compressed_string = "".join(file.read().split())
-    assert compressed_string == "a3b3c3aa"
+    assert compressed_string == "12312s;dfklasdlqwejkasdS3a270"
