@@ -35,3 +35,15 @@ It can be used Like this:
 compress.py --verbose /tmp/file_with_bytes /tmp/file_with_bytes_after_compression
 
 ```
+
+## Tests
+Tests can be Run with 
+```
+pytest -v tests.py
+```
+
+`uncompressed_test` contains the sequence to be compressed when the test is run
+
+`compressed_test` contains the sequence after compression. 
+
+NOTE:  If the Contents of `compressed_test` is changed Line 19 of `tests.py` has to be changed to match the Expected value
