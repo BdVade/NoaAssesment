@@ -3,8 +3,8 @@ import time
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument("input_file", help="Enter the path to the file with the sequence", )
-parser.add_argument("output_file", help="Enter the path to the file to write the Compressed string")
+parser.add_argument("input_file", help="Enter the path to the file with the uncompressed sequence", )
+parser.add_argument("output_file", help="Enter the path to the file to write the Compressed sequence")
 parser.add_argument("--verbose", help="Display compression stats", action="store_true")
 args = parser.parse_args()
 verbose = args.verbose
