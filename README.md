@@ -18,21 +18,21 @@ optional arguments:
 
 ## Example
 ```
-compress.py /tmp/file_with_bytes /tmp/file_with_bytes_after_compression
+ python compress.py --verbose=True uncompressed_test compressed_test
 ```
 
 NOTE: The Arguments have to be in Order. The input file first, Then the output file. 
 
 Using the --verbose flag displays the following information:
 
+- Compressed Array
 - Execution time
-- Length of Uncompressed String
-- Length of Compressed String
-- Uncompressed String
+- Length of Uncompressed sequence
+- Length of Compressed sequence
 
 It can be used Like this:
 ```
-compress.py --verbose /tmp/file_with_bytes /tmp/file_with_bytes_after_compression
+python compress.py --verbose=True uncompressed_test compressed_test
 
 ```
 
